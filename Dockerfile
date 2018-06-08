@@ -9,8 +9,8 @@ RUN apt-get upgrade -y
 RUN apt-get install -y --no-install-recommends --allow-unauthenticated ubuntu-desktop
 # RUN apt-get install -y tightvncserver
 RUN apt-get install -y vim wget net-tools
-
-WORKDIR $HOME
+RUN cd /root/
+# WORKDIR $HOME
 
 EXPOSE $PORT
 
